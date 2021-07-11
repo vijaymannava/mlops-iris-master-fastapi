@@ -2,8 +2,16 @@ from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression, LinearRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
 
-clf = GaussianNB()
+#clf = GaussianNB()
+#clf = LogisticRegression()
+#clf = DecisionTreeClassifier()
+clf = SVC()
+#clf = KNeighborsClassifier(n_neighbors=5,p=1)
 
 classes = {
     0: "Iris Setosa",
